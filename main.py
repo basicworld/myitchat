@@ -9,5 +9,6 @@ def text_reply(msg):
     itchat.send(st.msgs['busy'], msg['FromUserName'])
 
 
-itchat.auto_login(hotReload=True)
+# itchat.auto_login(enableCmdQR=True, hotReload=True)
+itchat.auto_login(enableCmdQR=2, hotReload=True)
 itchat.run()
